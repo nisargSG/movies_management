@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "id": "4",
+      "title": "Movie 4",
+      "views": 500,
+      "image": "https://www.gstatic.com/webp/gallery3/3.png"
+    },
+    {
+      "id": "5",
+      "title": "Movie 5",
+      "views": 500,
+      "image": "https://www.gstatic.com/webp/gallery3/3.png"
+    },
+    {
+      "id": "6",
+      "title": "Movie 6",
+      "views": 500,
+      "image": "https://www.gstatic.com/webp/gallery3/3.png"
+    },
+    {
+      "id": "7",
+      "title": "Movie 4",
+      "views": 500,
+      "image": "https://www.gstatic.com/webp/gallery3/3.png"
+    }
+  ]
+}
