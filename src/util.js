@@ -1,20 +1,18 @@
 const backEndServer="http://localhost:8000/movies/"
 
-const callAPI=(method="GET",postBody={},callBackFunction,itemId)=>{
+const callAPI=({method,postBody,callBackFunction,movieId})=>{
 
     const options={
         method: method,
     }
 
-    if(method=="POST"){
+    if(method==="POST")
         options.body = JSON.stringify(postBody)
-    }
 
-    console.log("CALLED "+method+ " "+itemId)
-
-    fetch(backEndServer+(itemId?itemId:""),options).then(rawData=>rawData.json()).then(json=>callBackFunction(json))
-
-
+    fetch(backEndServer+(movieId?movieId:""),options)
+    .then(rawData=>rawData.json())
+    .then(json=>callBackFunction(json))
+    .catch(()=>callBackFunction(false))
 }
 
 
