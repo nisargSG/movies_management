@@ -1,6 +1,6 @@
 import './Movie.css'
 
-export default function Movie(props) {
+export default function Movie(props) {  //static
 
     return (
         <div className="card card_movie">

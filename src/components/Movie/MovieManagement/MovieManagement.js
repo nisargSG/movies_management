@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import MovieList from './MovieList';
-import EditMovieForm from './EditMovieForm';
-import AddMovieForm from './AddMovieForm';
+
+import MovieList from '../MovieList/MovieList';      //default load this component
+import EditMovieForm from '../EditMovieForm/EditMovieForm';   //edit form
+import AddMovieForm from '../AddMovieForm/AddMovieForm';    //add form
 
 export default function MoviesManagement(){
 

@@ -1,12 +1,13 @@
 import './App.css';
-import Header from '../Header/Header';
-import MoviesManagement from '../Movie/MovieManagement';
+//add two more components
+import Header from '../Header/Header'; //Static info
+import MoviesManagement from '../Movie/MovieManagement/MovieManagement';
 
 function App() {
 
   return (
     <>
-      <Header/>
+      <Header/> 
       <MoviesManagement/>
     </>
 

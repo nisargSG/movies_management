@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Movie from './Movie'
+import Movie from '../Movie/Movie'
 import './MovieList.css'
-import { callAPI } from '../../util'
+import { callAPI } from '../../../util'
 
 export default function MovieList(props) {
 
