@@ -19,6 +19,8 @@ export default function MovieList(props) {
 
     //render movies
     return (
+        <>
+        <button type="button" onClick={()=>{props.setCurrentState({mode:"ADD"})}} class="btn btn-primary m-3">Add New Movie</button>
         <div className='container_movie_list'>
             {allMovies.length === 0 && <div className="alert alert-warning" role="alert">
                 No Movies Data Found
@@ -27,6 +29,7 @@ export default function MovieList(props) {
                 return <Movie key={movieData.id} setCurrentState={props.setCurrentState} movieData={movieData} />
             })}
         </div>
+        </>
     )
 
 }

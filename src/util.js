@@ -1,13 +1,13 @@
 const backEndServer="http://localhost:8000/movies/"
 
-const callAPI=({method,postBody,callBackFunction,movieId})=>{
+const callAPI=({method,requestBody,callBackFunction,movieId})=>{
 
     const options={
         method: method,
     }
 
-    if(method==="POST")
-        options.body = JSON.stringify(postBody)
+    if(method==="POST" || method==="PUT")
+        options.body = JSON.stringify(requestBody)
 
     fetch(backEndServer+(movieId?movieId:""),options)
     .then(rawData=>rawData.json())
