@@ -29,6 +29,12 @@
       "title": "Movie 55",
       "views": "100",
       "image": "https://www.gstatic.com/webp/gallery/3.jpg"
+    },
+    {
+      "title": "new movie",
+      "views": "800",
+      "image": "dawdawdaw",
+      "id": "b8e6"
     }
   ]
 }
